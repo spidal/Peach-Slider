@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container {
+	width: 1000px;
+	display: block;
+	margin: 0 auto;	
+}
+
+.slider-container {
+	border: 1px solid #CCC;
+	background: #FFF;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;	
+}
+
+.left {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.right {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
