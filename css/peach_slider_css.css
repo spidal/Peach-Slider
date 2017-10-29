@@ -2,12 +2,20 @@
 /* CSS Document */
 
 .container {
-	width: 1000px;
+	max-width: 1000px;
 	display: block;
 	margin: 0 auto;	
 }
 
-.slider-container {
+#peach_slider {
+	position: relative;
+	-moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 10px;
+}
+
+.ps_container {
 	border: 1px solid #CCC;
 	background: #FFF;
 	overflow: hidden;
@@ -27,18 +35,149 @@ h1 {
 
 .left {
 	position: absolute;
-	left: 0px;
+	left: -40px;
 	bottom: 0px;
-	padding: 10px;
+	top: 0px;
+	margin: auto;
+	display: block;
 	cursor: pointer;
+	border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid #EEE;
+    width: 0; 
+    height: 0; 
+}
+
+.left:hover {
+	border-right: 20px solid #000;
 }
 
 .right {
 	position: absolute;
-	right: 0px;
+	right: -40px;
 	bottom: 0px;
-	padding: 10px;
+	top: 0px;
+	margin: auto;
+	display: block;
 	cursor: pointer;
+	border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #EEE;
+    width: 0; 
+    height: 0; 
 }
 
+.right:hover {
+	border-left: 20px solid #000;
+}
 
+.ps_pager_con {
+	position: absolute;
+    bottom: -30px;
+    left: 0px;
+    right: 0px;
+    z-index: 999;
+}
+
+.ps_pager {
+	list-style: none;
+	margin: 0px auto;
+	padding: 0px;
+	display: table;
+}
+
+.ps_pager li {
+	display: inline-block;
+}
+
+.ps_pager_btn {
+	width: 10px;
+	height: 10px;
+	background: #CCC;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	display: block;
+	margin: 0px 3px;
+}
+
+.active {
+	background: #666 !important;
+}
+
+.ps_thumbnails_con {
+	position: absolute;
+    bottom: 15px;
+    left: 0px;
+    right: 0px;
+}
+
+.ps_thumbnails {
+	list-style: none;
+    margin: 0px auto;
+    padding: 0px;
+    display: table;
+}
+
+.ps_thumb {
+	list-style: none;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+    -moz-box-shadow: 0 0 5px #ccc;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    box-shadow: 0 0 5px #ccc;
+    padding: 4px;
+    background: #FFF;
+    margin: 0px 5px;
+}
+
+.ps_thumb_con {
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ps_thumb_btn {
+	overflow: hidden;
+	background: #FFF;
+}
+
+/* PROGRESS BAR CSS */
+
+.ps_progress_bar_con {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 4px;
+}
+
+.progress-bar {
+	height: 4px;
+	background: green;
+}
+
+code {
+	border: 1px solid #CCC;
+	padding: 10px;
+	border-radius: 4px;
+	display: block;
+}
+
+/* captions */
+
+.peach_slider_caption {
+	position: absolute;
+	top: 0px;
+	background: rgba( 0, 0, 0, 0.25);
+	color: #FFF;
+	display: block;
+	width: 100%;
+}
+
+.peach_slider_caption span {
+	padding: 20px;
+	display: block;
+}
