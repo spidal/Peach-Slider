@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="css/peach_slider_css.css" rel="stylesheet">
+<script src="../js/jquery.js"></script>
+<script type="text/javascript" src="http://www.christianburd.co.uk/main/peach_slider.js"></script>
+<script>
+	$(document).ready(function(){
+		$( ".demo" ).peachslider({
+            color: "#000000",
+            background: "#FFFFFF",
+            pager: true,
+            thumbnails: true,
+            speed: 1000,
+            transition: "slide",
+            autoplay: true,
+            autospeed: 5000,
+            auto_direction: "right",           
+            loop: true,
+            progress_bar: true,
+            captions: true
+        });        
+	});
+</script>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #peach_slider {
+        position: relative;
+        -moz-box-shadow: 0px !important;
+        -webkit-box-shadow: 0px !important;
+        box-shadow: 0px !important;
+        padding: 0px !important;
+    }
+    
+    .my_con {
+        height: 600px;
+    }
+
+	.my_con img {
+		width: 100%
+	}
+	
+	.ps_progress_bar_con {
+		position: absolute;
+		top: auto;
+		bottom: 6px !important;
+		left: 0px;
+		right: 0px;
+		height: 4px;
+	}
+	
+	#peach_slider .progress-bar {
+		height: 10px!important;
+		background: #28F!important;
+	}
+	
+	.ps_thumbnails_con {
+		bottom: 45px;
+	}
+	
+	.ps_thumb {
+		background: #000;
+	}
+	
+	.active {
+		background: #28F !important;
+	}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="demo">
+		<div class="my_con"><img src="img/image_1.jpg" alt=""/></div>
+        <div class="my_con"><img src="img/image_2.jpg" alt=""/></div>
+        <div class="my_con"><img src="img/image_3.jpg" alt=""/></div>
+        <div class="my_con"><img src="img/image_4.jpg" alt=""/></div>
+    </div>    
+</div>
+
+</body>
+</html>
+	
+    
